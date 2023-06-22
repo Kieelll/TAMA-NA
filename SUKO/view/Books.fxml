@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BooksController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="1024.0" layoutY="2.0" opacity="0.4">
+         <image>
+            <Image url="@../images/bg.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fece0d" height="111.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="1024.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="91.0" stroke="BLACK" strokeType="INSIDE" width="1024.0" />
+      <ImageView fitHeight="81.0" fitWidth="359.0" layoutX="-1.0" layoutY="5.0">
+         <image>
+            <Image url="@../images/BE.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="32.0" layoutX="-12.0" layoutY="617.0" stroke="BLACK" strokeType="INSIDE" width="1037.0" />
+      <Text fill="WHITE" layoutX="393.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NU Bulldogs Exchange. National University © 2023." />
+      <Button fx:id="Cart" layoutX="888.0" layoutY="30.0" mnemonicParsing="false" onAction="#gotoCart" style="-fx-background-color: fece0d; -fx-border-color: #000; -fx-border-radius: 5px; -fx-border-width: 0 0 1 0;" text="My Cart">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="26.0">
+               <image>
+                  <Image url="@../images/cart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="Home" layoutX="780.0" layoutY="30.0" mnemonicParsing="false" onAction="#gotoHome" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: fece0d; -fx-border-color: #000; -fx-border-radius: 5px; -fx-border-width: 0 0 1 0;" text="Home">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0">
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="45.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home &gt;&gt; Books">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Pane layoutX="93.0" layoutY="131.0" prefHeight="221.0" prefWidth="193.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="221.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fece0d" height="147.0" layoutX="7.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+            <ImageView fx:id="img2" fitHeight="138.0" fitWidth="169.0" layoutX="12.0" layoutY="11.0">
+               <image>
+                  <Image url="@../images/RLELevel1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="rleOne" layoutX="139.0" layoutY="161.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: FFF;" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="name1" layoutX="16.0" layoutY="165.0" text="RLE Manual Level 1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="price1" layoutX="143.0" layoutY="196.0" text="₱1000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="307.0" layoutY="131.0" prefHeight="221.0" prefWidth="193.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="221.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fece0d" height="147.0" layoutX="7.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+            <Button fx:id="rleTwo" layoutX="139.0" layoutY="160.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: FFF;" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img3" fitHeight="138.0" fitWidth="169.0" layoutX="12.0" layoutY="9.0">
+               <image>
+                  <Image url="@../images/RLELevel2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="name3" layoutX="16.0" layoutY="164.0" text="RLE Manual Level 2" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="price3" layoutX="144.0" layoutY="194.0" text="₱1000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="520.0" layoutY="131.0" prefHeight="221.0" prefWidth="193.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="221.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fece0d" height="147.0" layoutX="7.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+            <Button fx:id="rleThree" layoutX="139.0" layoutY="160.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: FFF;" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img4" fitHeight="138.0" fitWidth="169.0" layoutX="12.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/RLELevel3.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="name4" layoutX="12.0" layoutY="164.0" text="RLE Manual Level 3" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="price4" layoutX="143.0" layoutY="195.0" text="₱1000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="734.0" layoutY="131.0" prefHeight="221.0" prefWidth="193.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="221.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fece0d" height="147.0" layoutX="7.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+            <Button fx:id="rleFour" layoutX="139.0" layoutY="160.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: FFF;" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img5" fitHeight="138.0" fitWidth="169.0" layoutX="12.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/RLELevel4.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="name5" layoutX="12.0" layoutY="164.0" text="RLE Manual Level 4" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="price5" layoutX="142.0" layoutY="195.0" text="₱1000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="93.0" layoutY="364.0" prefHeight="221.0" prefWidth="193.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="221.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fece0d" height="147.0" layoutX="7.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+            <Button fx:id="biochem" layoutX="141.0" layoutY="160.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: FFF;" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img6" fitHeight="138.0" fitWidth="169.0" layoutX="12.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/BioChemManual.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="name6" layoutX="12.0" layoutY="159.0" text="Biochemistry Laboratory &#10;Manual 1st Edition" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="price6" layoutX="142.0" layoutY="194.0" text="₱1000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="307.0" layoutY="364.0" prefHeight="221.0" prefWidth="193.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="221.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fece0d" height="147.0" layoutX="7.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+            <Button fx:id="taxonomy" layoutX="142.0" layoutY="160.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: FFF;" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img7" fitHeight="138.0" fitWidth="169.0" layoutX="12.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/BotanyTaxonomy.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="name7" layoutX="10.0" layoutY="159.0" text="Botany with Taxonomy &#10;Laboratory Manual 1st &#10;Edition" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="price7" layoutX="144.0" layoutY="194.0" text="₱1000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="520.0" layoutY="364.0" prefHeight="221.0" prefWidth="193.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="221.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fece0d" height="147.0" layoutX="7.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+            <ImageView fx:id="img1" fitHeight="138.0" fitWidth="169.0" layoutX="12.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/HumanAnatomy.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="anatomy" layoutX="143.0" layoutY="160.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: FFF;" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="name1" layoutX="8.0" layoutY="157.0" text="Human Anatomy &amp; &#10;Psychology Laboratory &#10;Manual" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="price1" layoutX="146.0" layoutY="193.0" text="₱1000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="734.0" layoutY="364.0" prefHeight="221.0" prefWidth="193.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30408d" height="221.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fece0d" height="147.0" layoutX="7.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+            <ImageView fx:id="img8" fitHeight="138.0" fitWidth="169.0" layoutX="12.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/Pharmaceutical.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="pharmaBook" layoutX="143.0" layoutY="160.0" mnemonicParsing="false" onAction="#buy" style="-fx-background-color: FFF;" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="name8" layoutX="11.0" layoutY="155.0" text="Pharmaceutical Organic &#10;Medicinal Laboratory &#10;Manual" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="price8" layoutX="146.0" layoutY="193.0" text="₱1000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
